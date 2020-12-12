@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(255, 230, 161);
+}
+
+
+/* perspective transition etc fentre ouverture calendrier */
+
+fieldset {
+    border-radius: 25px;
+    border-width: 7px;
+    border-style: ridge;
+    border-color: red;
+    background-image: url("img_noel/background5.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 59, 59);
+    text-shadow: 0.1em 0.2em 0.2em black, -0.1em -0.1em 0.1em black;
+}
+
+
+/* MISE EN PLACE DES COLONNES  */
+
+.cases {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: fantasy;
+    height: 100%;
+    width: 100%;
+}
+
+.cases>div {
+    width: 10vw;
+    margin: 0.5rem;
+    position: relative;
+    display: flex;
+}
+
+
+/* CASE DE NOEL  */
+
+.Noel {
+    text-align: center;
+    position: relative;
+}
+
+
+/* BOUTONS */
+
+.boutnorm {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    border-width: 7px;
+    border-style: dotted;
+    border-color: rgba(87, 86, 86, 0);
+    transform-origin: left;
+    outline: none;
+    z-index: 100;
+    transition: 1s;
+    opacity: 1;
+}
+
+.boutnorm:hover {
+    border-radius: 50px;
+    border-width: 7px;
+    border-style: dotted;
+    border-color: rgb(87, 86, 86);
+}
+
+
+.images {
+    display: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.rotate {
+    transition: 0.5s;
+    transform: rotateY(90deg);
+    opacity: 0;
+}
+
